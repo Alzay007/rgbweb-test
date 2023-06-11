@@ -3,3 +3,11 @@
 @import './blocks/header.scss';
 @import './blocks/about.scss';
 @import './blocks/form.scss';
+@import './blocks/bonus.scss';
+
+#root {
+  @include onDesktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,78 @@
+.form {
+  margin: 0 16px 36px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 328px;
+    padding: 40px 21px;
+    background-color: $formBackground;
+    border-radius: 9px;
+  }
+
+  &__title {
+    font-family: 'Gilroy-Bold';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+
+    color: $colorWhite;
+    margin-bottom: 18px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item {
+    background-color: #272D3D;
+    width: 286px;
+    height: 46px;
+    border-radius: 4.5px;
+
+    padding: 12px 109px 12px 26px;
+
+    margin-bottom: 14px;
+
+    &::placeholder {
+      font-family: 'Gilroy';
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 22px;
+
+      color: $colorWhite;
+    }
+  }
+
+  &__button {
+    width: 222px;
+    height: 46px;
+    font-family: 'Gilroy-Bold';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 18px;
+
+    color: $colorWhite;
+    background-color: $buttonColorMobile;
+  }
+
+  &__politic {
+    font-family: 'Gilroy-Medium';
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 149%;
+
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.highlight {
+  color: $buttonColor;
+}
