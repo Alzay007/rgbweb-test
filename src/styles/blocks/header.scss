@@ -1,0 +1,90 @@
+.header {
+  @include onDesktop {
+    width: 1040px;
+    height: 104px;
+    margin: 10px auto 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 28px 16px 32px 30px;
+
+    @include onDesktop {
+      padding: 34px 56px 24px;
+    }
+  }
+
+  &__logo {
+    height: 32px;
+
+    @include onDesktop {
+      height: 56px;
+    }
+
+    &-img {
+      width: 101px;
+
+      @include onDesktop {
+        width: 182px;
+        height: 56px;
+      }
+    }
+  }
+
+  &__info {
+    @include flex-center;
+    gap: 6px;
+
+    @include onDesktop {
+      gap: 18px;
+    }
+
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+
+      width: 88px;
+      height: 24px;
+
+      background-color: #302E5A;
+      border-radius: 10px;
+
+      @include onDesktop {
+        width: 141px;
+        height: 40px;
+
+        gap: 7px;
+      }
+    }
+
+    &-icon {
+      height: 12.5px;
+      width: 12.5px;
+
+      @include onDesktop {
+        height: 15px;
+        width: 15px;
+      }
+    }
+
+    &-text {
+      font-family: 'Gilroy-Semi';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 8px;
+
+      color: $colorWhite;
+
+      @include onDesktop {
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+  }
+}
