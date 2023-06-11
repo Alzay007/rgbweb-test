@@ -8,6 +8,35 @@
 #root {
   @include onDesktop {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 928px;
+    margin: 116px auto 27px;
   }
 }
+
+// .ellipse {
+//   position: absolute;
+//   width: 912px;
+//   height: 912px;
+//   left: -151px;
+//   top: 430px;
+
+//   z-index: -1;
+
+//   background: #332F65;
+//   filter: blur(250px);
+
+//   @include onDesktop {
+//     position: absolute;
+//     width: 790.65px;
+//     height: 793.23px;
+//     left: 1068.67px;
+//     bottom: 342.77px;
+
+//     background: #332F65;
+//     opacity: 0.8;
+//     filter: blur(103.131px);
+//     transform: rotate(9.41deg);
+//   }
+// }

@@ -2,6 +2,10 @@
   width: 224px;
   margin: 0 auto 32px;
 
+  @include onDesktop {
+    margin: 0;
+  }
+
   &__present {
     display: flex;
     justify-content: center;
@@ -9,9 +13,23 @@
 
     margin-bottom: 22px;
 
+    @include onDesktop {
+      position: absolute;
+      width: 278px;
+      height: 52.4px;
+      top: 627.59px;
+
+      gap: 30px;
+    }
+
     &-img {
       width: 46px;
       height: 46px;
+
+      @include onDesktop {
+        width: 38px;
+        height: 38px;
+      }
     }
 
     &-subtitle {
@@ -21,6 +39,10 @@
       line-height: 148%;
 
       color: $colorWhite;
+
+      @include onDesktop {
+        font-size: 12px;
+      }
     }
 
     &-text {
@@ -39,6 +61,13 @@
 
     gap: 11px;
 
+    @include onDesktop {
+      position: absolute;
+      width: 375px;
+      height: 55.59px;
+      top: 556px;
+    }
+
     &-img {
       width: 56px;
       height: 62px;
@@ -52,6 +81,10 @@
       text-transform: uppercase;
 
       color: $colorWhite;
+
+      @include onDesktop {
+        font-size: 13px;
+      }
     }
 
     &-text {

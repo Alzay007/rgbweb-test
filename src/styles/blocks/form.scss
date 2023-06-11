@@ -1,6 +1,10 @@
 .form {
   margin: 0 16px 36px;
 
+  @include onDesktop {
+    margin: 0;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -9,6 +13,11 @@
     padding: 40px 21px;
     background-color: $formBackground;
     border-radius: 9px;
+
+    @include onDesktop {
+      width: 366px;
+      padding: 50px 59px;
+    }
   }
 
   &__title {
@@ -20,6 +29,12 @@
 
     color: $colorWhite;
     margin-bottom: 18px;
+
+    @include onDesktop {
+      font-size: 22px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
   }
 
   &__content {
@@ -34,9 +49,17 @@
     height: 46px;
     border-radius: 4.5px;
 
-    padding: 12px 109px 12px 26px;
-
+    padding: 12px 0 12px 26px;
     margin-bottom: 14px;
+
+    color: $colorWhite;
+
+    @include onDesktop {
+      width: 248px;
+      height: 51px;
+
+      padding: 13px 0 14px 22px;
+    }
 
     &::placeholder {
       font-family: 'Gilroy';
@@ -45,6 +68,11 @@
       line-height: 22px;
 
       color: $colorWhite;
+
+      @include onDesktop {
+        font-size: 13px;
+        line-height: 24px;
+      }
     }
   }
 
@@ -60,6 +88,19 @@
 
     color: $colorWhite;
     background-color: $buttonColorMobile;
+    border-radius: 4.5px;
+
+    @include onDesktop {
+      font-size: 15px;
+      line-height: 24px;
+      width: 248px;
+      height: 51px;
+
+      margin-bottom: 20px;
+
+      background-color: $buttonColor;
+      border-radius: 5px;
+    }
   }
 
   &__politic {
@@ -70,6 +111,10 @@
 
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
+
+    @include onDesktop {
+      font-size: 12px;
+    }
   }
 }
 

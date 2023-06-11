@@ -1,0 +1,9 @@
+.footer {
+  &__img {
+    display: none;
+
+    @include onDesktop {
+      display: block;
+    }
+  }
+}
