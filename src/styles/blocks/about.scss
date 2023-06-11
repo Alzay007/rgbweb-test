@@ -1,0 +1,134 @@
+.about {
+  margin-bottom: 20px;
+
+  &__title {
+    font-family: 'Gilroy-Bold';
+    font-weight: 800;
+    font-size: 53px;
+    line-height: 65px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $buttonColor;
+  }
+
+  &__subtitle {
+    @include flex-center;
+
+    gap: 12px;
+    margin-bottom: 16px;
+
+    &-main {
+      @include flex-center;
+      width: 78px;
+      height: 32px;
+
+      background-color: $buttonColor;
+      color: $colorWhite;
+
+      border-radius: 3.57298px;
+      transform: matrix(1, -0.06, 0.06, 1, 0, 0);
+    }
+
+    &-text {
+      font-family: 'Gilroy-Semi';
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+
+      color: $colorWhite;
+    }
+  }
+
+  &__text {
+    font-family: 'Gilroy-Bold';
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    color: $colorWhite;
+  }
+
+  &__info {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 148%;
+
+    text-align: center;
+    color: $colorWhite;
+
+    width: 328px;
+    margin: auto;
+  }
+}
+
+.web {
+  @include flex-center;
+
+  margin: 0 129px 0 142px;
+
+  @include onDesktop {
+    margin: 0;
+  }
+
+  &__wrapper {
+    @include flex-center;
+    gap: 5px;
+
+    width: 89px;
+    height: 24px;
+
+    background-color: #4252D1;
+    border-radius: 3px;
+
+    @include onDesktop {
+      gap: 7px;
+
+      width: 119px;
+      height: 32px;
+    }
+  }
+
+  &__icon {
+    width: 14px;
+    height: 14px;
+
+    @include onDesktop {
+      width: 19px;
+      height: 19px;
+    }
+
+    &-img {
+      @include onDesktop {
+        width: 19px;
+        height: 19px;
+      }
+    }
+  }
+
+  &__text {
+    font-family: 'Gilroy-Semi';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: $colorWhite;
+
+    @include onDesktop {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+
+.blue-text {
+  color: #4252D1;
+  font-weight: 600;
+}
+
+.bold-text {
+  font-weight: 600;
+}
