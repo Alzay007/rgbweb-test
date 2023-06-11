@@ -1,9 +1,12 @@
-@import './utils.scss';
+@import "./utils.scss";
 
-@import './blocks/header.scss';
-@import './blocks/about.scss';
-@import './blocks/form.scss';
-@import './blocks/bonus.scss';
+@import "./blocks/header.scss";
+@import "./blocks/about.scss";
+@import "./blocks/form.scss";
+@import "./blocks/bonus.scss";
+@import "./blocks/icons.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/ellipse.scss";
 
 #root {
   @include onDesktop {
@@ -14,29 +17,3 @@
     margin: 116px auto 27px;
   }
 }
-
-// .ellipse {
-//   position: absolute;
-//   width: 912px;
-//   height: 912px;
-//   left: -151px;
-//   top: 430px;
-
-//   z-index: -1;
-
-//   background: #332F65;
-//   filter: blur(250px);
-
-//   @include onDesktop {
-//     position: absolute;
-//     width: 790.65px;
-//     height: 793.23px;
-//     left: 1068.67px;
-//     bottom: 342.77px;
-
-//     background: #332F65;
-//     opacity: 0.8;
-//     filter: blur(103.131px);
-//     transform: rotate(9.41deg);
-//   }
-// }

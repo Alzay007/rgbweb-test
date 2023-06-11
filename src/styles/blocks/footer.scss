@@ -1,9 +1,11 @@
 .footer {
-  &__img {
-    display: none;
+  display: none;
 
-    @include onDesktop {
-      display: block;
-    }
+  @media (min-width: 1440px) {
+    display: block;
+    width: 1440px;
+    margin: 0 auto;
+
+    padding-top: 13px;
   }
 }

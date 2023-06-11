@@ -76,7 +76,13 @@
             Запишитесь <span class="highlight">бесплатно</span><br>
             и получите подарок
           </h3>
-          <form class="form__content">
+          <form
+            action="https://formspree.io/f/mjvdqnpn"
+            method="POST"
+            id="form"
+            class="form__content"
+            autocomplete="off"
+          >
             <label for="name"></label>
             <input
               type="text"
@@ -84,7 +90,7 @@
               name="name"
               placeholder="Ваше имя и фамилия"
               class="form__item"
-              pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+              pattern="/^[a-zA-Z]+([' -][a-zA-Z ])?[a-zA-Z]*$|^[а-яА-Я]+([' -][а-яА-Я ])?[а-яА-Я]*$/"
               required
             >
 
@@ -116,7 +122,8 @@
               required
             >
 
-            <button type="submit" class="form__button">Записаться бесплатно</button>
+            <button id="my-form-button" class="form__button">Записаться бесплатно</button>
+            <p id="form-status"></p>
           </form>
 
           <span class="form__politic">
@@ -155,14 +162,54 @@
           </div>
         </div>
       </section>
+
+      <section class="icons">
+        <div class="html">
+          <img
+            src="./images/icons/html.svg"
+            alt="html-icon"
+            class="html__img"
+          >
+        </div>
+        <div class="css">
+          <img
+            src="./images/icons/css.svg"
+            alt="css-icon"
+            class="css__img"
+          >
+        </div>
+        <div class="js">
+          <img
+            src="./images/icons/javascript.svg"
+            alt="js-icon"
+            class="js__img"
+          >
+        </div>
+        <div class="vsc">
+          <img
+          src="./images/icons/vsc.svg"
+          alt="vcs-icon"
+          class="vsc__img"
+        >
+        </div>
+        <div class="sublime">
+          <img
+            src="./images/icons/sublime.svg"
+            alt="sublime"
+            class="sublime__icon"
+          >
+        </div>
+      </section>
+
+      <div class="small-ellipse"></div>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <img
         src="./images/icons/front-end.svg"
         alt="front-end"
         class="footer__img"
       >
-    </footer> -->
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
