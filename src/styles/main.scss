@@ -7,6 +7,7 @@
 @import "./blocks/icons.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/ellipse.scss";
+@import "./blocks/container.scss";
 
 #root {
   @include onDesktop {
@@ -14,6 +15,6 @@
     flex-wrap: wrap;
 
     width: 928px;
-    margin: 116px auto 27px;
+    margin: 92px auto 27px;
   }
 }

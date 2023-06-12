@@ -3,13 +3,13 @@
 
   @include onDesktop {
     margin-right: 135px;
-    margin-bottom: 52px;
+    margin-bottom: 0;
 
     flex-basis: 427px;
   }
 
   &__title {
-    font-family: 'Gilroy-Extrabold';
+    font-family: "Gilroy-Extrabold", sans-serif;
     font-weight: 800;
     font-size: 53px;
     line-height: 65px;
@@ -29,18 +29,20 @@
 
   &__subtitle {
     @include flex-center;
-
     gap: 12px;
+
     margin-bottom: 16px;
 
     @include onDesktop {
       justify-content: start;
       gap: 16px;
+
       margin-bottom: 20.5px;
     }
 
     &-main {
       @include flex-center;
+
       width: 78px;
       height: 32px;
 
@@ -59,7 +61,7 @@
     }
 
     &-text {
-      font-family: 'Gilroy-Semi';
+      font-family: "Gilroy-Semi", sans-serif;
       font-weight: 600;
       font-size: 15px;
       line-height: 18px;
@@ -73,8 +75,8 @@
     }
   }
 
-  &__text {
-    font-family: 'Gilroy-Extrabold';
+  &__zero {
+    font-family: "Gilroy-Extrabold", sans-serif;
     font-weight: 800;
     font-size: 16px;
     line-height: 20px;
@@ -89,7 +91,7 @@
   }
 
   &__info {
-    font-family: 'Gilroy';
+    font-family: "Gilroy", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 148%;
@@ -124,7 +126,7 @@
     width: 89px;
     height: 24px;
 
-    background-color: #4252D1;
+    background-color: #4252d1;
     border-radius: 3px;
 
     @include onDesktop {
@@ -153,7 +155,7 @@
   }
 
   &__text {
-    font-family: 'Gilroy-Semi';
+    font-family: "Gilroy-Semi", sans-serif;
     font-weight: 600;
     font-size: 12px;
     line-height: 18px;
@@ -168,12 +170,13 @@
 }
 
 .blue-text {
-  color: #4252D1;
-  font-family: 'Gilroy-Semi';
+  font-family: "Gilroy-Semi", sans-serif;
   font-weight: 600;
+
+  color: #4252d1;
 }
 
 .bold-text {
-  font-family: 'Gilroy-Semi';
+  font-family: "Gilroy-Semi", sans-serif;
   font-weight: 600;
 }

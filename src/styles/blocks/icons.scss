@@ -3,60 +3,10 @@
 
   @media (min-width: 1440px) {
     display: block;
-  }
-}
+    position: absolute;
+    z-index: 1;
 
-.html {
-  position: absolute;
-  left: 1318px;
-  top: 242px;
-
-  &__img {
-    width: 88px;
-    height: 88px;
-  }
-}
-
-.css {
-  position: absolute;
-  left: 1219px;
-  top: 364px;
-
-  &__img {
-    width: 60px;
-    height: 86px;
-  }
-}
-
-.js {
-  position: absolute;
-  left: 1344px;
-  top: 404px;
-
-  &__img {
-    width: 62px;
-    height: 73px;
-  }
-}
-
-.vsc {
-  position: absolute;
-  left: 1296px;
-  top: 568px;
-
-  &__img {
-    width: 61px;
-    height: 61px;
-  }
-}
-
-.sublime {
-  position: absolute;
-  left: 1221px;
-  top: 498px;
-
-  &__img {
-    width: 54px;
-    height: 54px;
+    top: 242px;
+    right: 22px;
   }
 }

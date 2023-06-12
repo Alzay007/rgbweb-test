@@ -2,18 +2,17 @@
   @include onDesktop {
     width: 1040px;
     height: 104px;
-    margin: 10px auto 0;
+    margin: 0 auto;
   }
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 
     padding: 28px 16px 32px 30px;
 
     @include onDesktop {
-      padding: 34px 56px 24px;
+      padding: 24px 56px;
     }
   }
 
@@ -43,15 +42,13 @@
     }
 
     &-item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex-center;
       gap: 5px;
 
       width: 88px;
       height: 24px;
 
-      background-color: #302E5A;
+      background-color: #302e5a;
       border-radius: 10px;
 
       @include onDesktop {
@@ -73,8 +70,7 @@
     }
 
     &-text {
-      font-family: 'Gilroy-Semi';
-      font-style: normal;
+      font-family: "Gilroy-Semi", sans-serif;
       font-weight: 600;
       font-size: 11px;
       line-height: 8px;

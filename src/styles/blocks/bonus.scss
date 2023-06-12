@@ -1,6 +1,6 @@
 .bonus {
   width: 224px;
-  margin: 0 auto 32px;
+  margin: 0 auto 39px;
 
   @include onDesktop {
     margin: 0;
@@ -33,7 +33,7 @@
     }
 
     &-subtitle {
-      font-family: 'Gilroy-Bold';
+      font-family: "Gilroy-Bold", sans-serif;
       font-weight: 700;
       font-size: 14px;
       line-height: 148%;
@@ -46,7 +46,7 @@
     }
 
     &-text {
-      font-family: 'Gilroy';
+      font-family: "Gilroy", sans-serif;
       font-weight: 400;
       font-size: 12px;
       line-height: 148%;
@@ -55,7 +55,7 @@
     }
   }
 
-  &__kiril {
+  &__speaker {
     display: flex;
     justify-content: center;
 
@@ -74,7 +74,7 @@
     }
 
     &-subtitle {
-      font-family: 'Gilroy-Bold';
+      font-family: "Gilroy-Bold", sans-serif;
       font-weight: 700;
       font-size: 14px;
       line-height: 120%;
@@ -88,7 +88,7 @@
     }
 
     &-text {
-      font-family: 'Gilroy';
+      font-family: "Gilroy", sans-serif;
       font-weight: 400;
       font-size: 12px;
       line-height: 160%;
@@ -99,5 +99,5 @@
 }
 
 .blue {
-  color: #4252D1;
+  color: #4252d1;
 }

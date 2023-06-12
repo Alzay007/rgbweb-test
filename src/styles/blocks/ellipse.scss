@@ -1,15 +1,20 @@
 .small-ellipse {
-  display: none;
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  left: -90px;
+  top: 324px;
+
+  background: $colorEllipse;
+  filter: blur(250px);
 
   @media (min-width: 1440px) {
-    display: block;
-    position: absolute;
     width: 399px;
     height: 400px;
+    top: 0;
     left: -31.33px;
     bottom: 490px;
 
-    background: $colorEllipse;
     opacity: 0.5;
     filter: blur(103px);
     transform: rotate(9.41deg);
@@ -17,19 +22,24 @@
 }
 
 .big-ellipse {
-  display: none;
+  position: absolute;
+  width: 912px;
+  height: 912px;
+  left: -151px;
+  top: 430px;
+
+  z-index: -1;
+
+  background: $colorEllipse;
+  filter: blur(250px);
 
   @media (min-width: 1440px) {
-    display: block;
-    position: absolute;
     width: 791px;
     height: 793px;
-    right: -396.5px;
+    top: 0;
+    left: 1069px;
     bottom: 343px;
 
-    z-index: -1;
-
-    background: $colorEllipse;
     opacity: 0.8;
     filter: blur(103px);
     transform: rotate(9.41deg);

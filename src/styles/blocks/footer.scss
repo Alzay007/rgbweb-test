@@ -3,9 +3,16 @@
 
   @media (min-width: 1440px) {
     display: block;
-    width: 1440px;
-    margin: 0 auto;
+  }
 
-    padding-top: 13px;
+  &__text {
+    font-family: "Gilroy-ExtraBold", sans-serif;
+    font-weight: 800;
+    font-size: 129px;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.05);
   }
 }
